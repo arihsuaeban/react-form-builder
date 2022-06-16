@@ -44,4 +44,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+    <!-- Try to load from cdn to exclude path issues. -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      window.jQuery = window.$ = jQuery;
+ 
+      $(document).ready(function() {
+          console.log( "jQuery is loaded" );
+      });
+   </script>
 </html>
